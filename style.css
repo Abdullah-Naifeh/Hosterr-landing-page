@@ -1,0 +1,463 @@
+:root {
+    font-size: 62.5%;
+    --primery-font:'Playfair Display', serif;
+    --secondery-font: 'lato', sans-serif;
+    margin: 0;
+}
+
+body{
+    background: #F9F4E8;
+    margin: 0;
+}
+
+/* Mobile View */
+@media only screen and (min-width: 280px  )  {
+
+
+    .container{
+        margin: 25px  25px ;
+    }
+
+    header{
+        display: flex;
+        justify-content:flex-start  ;
+        align-items: center;
+        
+    }
+
+    .logo{
+        display: flex;
+        margin-right: auto;
+    }
+
+
+    header div #hiring-btn {
+        font-family:var(--secondery-font) ;
+        font-size: 1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        background-image: linear-gradient(90deg, rgba(204,156,83,1) 30%, rgba(234,81,117,1) 100%);
+        padding: 5px  10px  ; 
+        margin: 0 0 0 10px ;
+    }
+
+    .nav ,
+    .register{
+        display: none;
+    }
+
+
+    .hero-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 85px 0  ;
+    }
+
+    .hero-img img{
+        margin-left: 33px;
+        width: 230px;
+        height: 286px;
+    }
+
+    .blue{
+        transform:rotate(-45deg);
+        transform-origin: center;
+    }
+
+
+    .pink{
+        position: absolute;
+        transform: rotate(-25deg);
+        transform-origin: center;
+    }
+
+
+    .purple {
+        position: absolute;
+        transform: rotate(-10deg);
+        transform-origin: center;
+    }
+
+
+    .model{
+        position: absolute;
+        top: 10px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title h1{
+        font-family: var(--primery-font);
+        font-weight: 700;
+        font-size: 4.5rem;
+        margin-bottom: 0;
+    }
+
+    .title p{
+        font-family: var(--secondery-font);
+        opacity: 0.6;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+    }
+
+    #email{
+        border-radius: 5px;
+        padding: 0 0 0 10px;
+        font-family: var(--secondery-font);
+        font-size: 1.4rem;
+        opacity: 0.9;
+        border: transparent solid 1px;
+        min-height: 50px;
+        background-color: #ffffff;
+    }
+
+    #submit{
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 15px 10px;
+        border: transparent solid 1px;
+        background-color: #4977EA;
+        color: #ffffff;
+        font-family: var(--secondery-font);
+        font-size: 1.5rem;
+        margin: 15px 0 ;
+    }
+
+    .icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon img{
+        margin: 0 10px 0px 0px;
+    }
+
+    .icon span{
+        font-family: var(--secondery-font);
+        opacity: 0.75;
+        font-size: 1.5rem;
+    }
+
+    .social-media{
+        display: flex;
+        margin: 50px 0;
+    }
+
+    .social-media a{
+        text-decoration: none;
+        font-family: var(--secondery-font);
+        color: black;
+        opacity: 0.75;
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+
+    .question-area{
+        display: flex;
+
+    }
+
+    .question-area img{
+        margin: 0 15px 0 0px;
+    }
+
+    .question-area .text h5{
+        font-family: var(--primery-font);
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+    .question-area a{
+        font-family: var(--secondery-font);
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet view */
+
+@media only screen and (min-width: 760px ){
+
+    .container{
+        max-width: 720px;
+        margin: 0 auto;      
+    }
+
+    header{
+        margin-top: 40px;
+    }
+
+    .hero-img{
+        margin: 10px 0 0 0;
+    }
+
+    .hero-img img{
+        width: 400px;
+        height: 456px;
+    }
+
+    .title h1{
+        margin: 0;
+        font-weight: 700;
+        font-size: 6rem;
+    }
+
+    .title p{
+        font-size: 1.7rem;
+        line-height: 25px;
+        font-weight: 600;
+        opacity: 0.6;
+    }
+
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .form #email{
+        min-width: 340px;
+        margin: 0 10px 0 0;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .form #submit{
+        padding: 20px 30px;
+        min-width: 135px;
+        margin: 0 ;
+    }
+
+    
+    .icon img{
+        margin-right: 15px;
+    }
+
+    .icon span{
+        font-size: 1.7rem;
+        line-height: 25px;
+        font-weight: 600;
+        opacity: 0.6;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 70px 0 40px 0; 
+    }
+
+    .question-area .text h5{
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .question-area .text a{
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+
+    .social-media{
+        margin: 0 260px 0 0;
+        
+    }
+
+    .social-media a{
+        font-size: 1.6rem;
+        font-weight: 700;
+        opacity: 0.55;
+    }
+}
+
+/* Desktop View*/
+
+@media only screen and (min-width: 1020px) {
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #burger-menu{
+        display: none;
+    }
+
+    .nav ,
+    .register{
+        display: inline-block;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    header div #hiring-btn {
+        margin: 0 0 0 10px;
+        font-size: 1.5rem;
+    }
+
+    header
+    .nav 
+    a{
+        text-decoration: none;
+        font-family:var(--secondery-font) ;
+        font-size: 2rem;
+        font-weight: 600;
+        color: black;
+        margin-right: 20px;
+        opacity: 0.5;
+    }
+
+    header
+    .register 
+    #sign-in{
+        text-decoration: none;
+        font-family:var(--secondery-font) ;
+        font-size: 2rem;
+        font-weight: 600;
+        color: black;
+        opacity: 0.5;
+        margin-right: 15px;
+    }
+
+    header
+    .register 
+    #wait-list{
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 17px 21px;
+        margin: 0 0px 15px;
+        border: transparent solid 1px;
+        background-color: #4977EA;
+        color: #ffffff;
+        font-family: var(--secondery-font);
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    article{
+        margin-top: 20px;
+    }
+
+    .hero-heading{
+        margin-top: 55px;
+    }
+    
+    .title ,
+    .form{
+        min-width: 550px;
+    }
+
+    .title h1{
+        font-weight: 800;
+        font-size: 5.5rem;
+    }
+
+    .title p {
+        font-size: 1.9rem;
+        line-height: 29px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+
+    .form{
+        margin: 0;
+    }
+
+    #email{
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: 0.85;
+        max-height: 60px;
+    }
+
+    .form #submit{
+        padding: 17px 18px;
+        font-size: 2rem;
+        font-weight: 500;
+        
+    }
+
+    .icon{
+        
+        margin-top: 25px;
+    }
+
+    .icon span{
+        font-size: 1.9rem;
+        font-weight: 600;
+        opacity: 0.5;
+        margin-top: 0px;
+    }
+
+    .icon img{
+        margin-right: 15px;
+    }
+
+    .hero-img img{
+        width: 400px;
+        height: 456px;
+    }
+
+    .hero-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .hero-img{
+        margin-left: 150px;
+        order: 1;
+    }
+
+    .hero-heading{
+        max-width: 500px;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 164px 0 20px 0;
+    }
+
+    .question-area .text h5{
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    .question-area .text a{
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+
+
+    .social-media a{
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: 0.55;
+        
+    }
+}
